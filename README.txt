@@ -3,9 +3,13 @@ PURPOSE
 
 Berkeley Blue is a Zen-based theme for UC Berkeley websites. 
 
-Branches
---------
+NOTES
+-----
 
-The drupal.org git strategy is not to use the master branch.  Click on
-the github Branches tab to get to the 6.x and 7.x branches. The
-READMEs on the branches might be more entertaining.
+A 6.x version of this theme exists. It was developed for a specific
+site.  It has not be adapted for general use yet.
+
+AUTHORS
+-------
+
+Kathleen Lu
