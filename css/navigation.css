@@ -1,0 +1,149 @@
+/**
+ * @file
+ * Navigation Styling
+ */
+
+
+/*
+ * The active item in a Drupal menu
+ */
+li a.active {
+  color: #000;
+}
+
+/*
+ * Navigation bar
+ */
+#navigation {
+  overflow: hidden; /* Sometimes you want to prevent overlapping with main div. */
+}
+
+#navigation ul.links, /* Main menu and secondary menu links */
+#navigation .content ul /* Menu block links */ {
+  text-align: left; /* LTR */
+	background-color: #003366;
+	background-image: url("../images/grad_norm.gif");
+	background-repeat: repeat-x;
+	color: #FFFFFF;
+	float: left;
+	font: bold 0.8em Verdana,Arial,Helvetica,sans-serif;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	width: 100%;	
+}
+
+#navigation ul.links li, /* A simple method to get navigation links to appear in one line. */
+#navigation .content li {
+  float: left; /* LTR */
+  padding: 0 10px 0 0; /* LTR */
+}
+
+#navigation ul.links li a {
+	border-right: 1px solid #FFFFFF;
+	color: #FFFFFF;
+	float: left;
+	height: 25px;
+	max-width: 102px;
+	padding: 10px 12px;
+	text-align: center;
+}
+
+#navigation ul.links li.active-trail a,
+#secondary-menu ul.links li.active-trail a {
+	color: #FFCE00;
+  font-weight: bold;
+	}
+.region-navigation {
+}
+
+/*
+ * Main menu and Secondary menu links
+ */
+#main-menu {
+}
+
+/*
+ * Secondary menu in #topwrapper 
+ */
+
+#secondary-menu {
+  float: right;
+}
+
+
+ul#secondary-menu {
+	color: #FFFFFF;
+  float: right;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size: 0.9em;
+	margin:4px 0;
+	}
+	
+ul#secondary-menu.links.inline li {
+  display: inline;
+	padding:0;
+}
+
+ul#secondary-menu.links.inline li a {
+	border-right: 1px solid #FFFFFF;
+	color: #FFFFFF;
+	float: left;
+	padding: 0 1em;
+	}
+ul#secondary-menu.links.inline li.last a {
+	border-right:none;
+	padding-right:0;
+	}
+/*
+ * Menu blocks
+ */
+.block-menu {
+}
+
+/*
+ * "Menu block" blocks
+ *
+ * Drupal core has limited ways in which it can display its menus. To get around
+ * these limitations, see http://drupal.org/project/menu_block
+ */
+
+.block-menu-block ul.menu {
+	margin:0;
+	padding:0;
+	}
+.block-menu-block ul.menu li {
+  display: inline;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+
+.block-menu-block ul.menu li a.active {
+	color: #003461;
+	font-weight: bold;	
+	}
+.block-menu-block ul.menu li a {
+  border-bottom: 1px solid #B3BED5;
+  display: block;
+  padding: 5px 0 5px 20px;
+}
+.block-menu-block ul.menu li.leaf a.active-trail {
+	background: url("../images/menu-leaf.png") no-repeat scroll 5px 10px transparent;
+}
+.block-menu-block li.expanded a.active-trail {
+  background: url("../images/menu-expanded.png") no-repeat scroll 5px 10px transparent;
+}
+.block-menu-block ul.menu ul {
+    background: #ECF2FA;
+}
+.block-menu-block ul.menu ul li a {
+	border-bottom: 1px dotted #B3BED5;
+	display: block;
+	padding: 5px 0 5px 35px;
+	}
+.block-menu-block ul.menu li a:hover, .block-menu-block ul.menu li a:active, .block-menu-block ul.menu ul li a:hover, .block-menu-block ul.menu ul li a:active {
+	background-color:#B3BED5;
+	color:#003461;
+	}
+
